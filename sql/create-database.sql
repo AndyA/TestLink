@@ -1,0 +1,4 @@
+CREATE DATABASE /*!32312 IF NOT EXISTS*/ `testlink`;
+GRANT USAGE ON *.* TO  "testlink"@"localhost" IDENTIFIED BY "testlink" WITH MAX_QUERIES_PER_HOUR 0 MAX_CONNECTIONS_PER_HOUR 0 MAX_UPDATES_PER_HOUR 0;
+GRANT ALL PRIVILEGES ON testlink.* TO "testlink"@"localhost" WITH GRANT OPTION;
+flush privileges;
