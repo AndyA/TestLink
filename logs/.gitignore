@@ -1,0 +1,8 @@
+*.pid
+access_log
+access_log.*
+error_log
+error_log.*
+ssl_error_log
+ssl_request_log
+ssl_request_log.*
