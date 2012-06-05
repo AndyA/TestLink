@@ -69,6 +69,10 @@ function require_web_editor($editor_type=null)
     	case 'fckeditor':
     		return "../../third_party/fckeditor/fckeditor.php";
     		break;
+
+    	case 'ckeditor':
+    		return "../../third_party/ckeditor/wrapper.php";
+    		break;
    
     	case 'tinymce':
     		return "tinymce.class.php";
@@ -104,6 +108,15 @@ function web_editor($html_input_id,$base_path,$editor_cfg=null)
 				$of->Height = $webEditorCfg['height'];
 			if (isset($webEditorCfg['width']))
 				$of->Width = $webEditorCfg['width'];
+		break;
+
+		case 'ckeditor':
+                        $of = new CKeditorWrapper( $base_path . 'third_party/ckeditor/',
+                                                   $html_input_id );
+			if (isset($webEditorCfg['height']))
+				$of->config['height'] = $webEditorCfg['height'];
+			if (isset($webEditorCfg['width']))
+				$of->config['width'] = $webEditorCfg['width'];
 		break;
 		    
 		case 'tinymce':
