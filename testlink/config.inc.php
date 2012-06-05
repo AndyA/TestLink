@@ -462,6 +462,7 @@ $tlCfg->dashboard_precision = 2;
  *
  * 'type':
  *        'fckeditor'
+ *        'ckeditor'
  *        'tinymce'
  *        'none' -> use plain text area input field
  * 'toolbar': only applicable for type = 'fckeditor'
@@ -498,9 +499,10 @@ $tlCfg->dashboard_precision = 2;
  * Hint: After doing configuration changes, clean you Browser's cookies and cache
  */
 $tlCfg->gui->text_editor = array();
-$tlCfg->gui->text_editor['all'] = array('type' => 'fckeditor',
-                                    	'toolbar' => 'tl_default',
-                                    	'configFile' => 'cfg/tl_fckeditor_config.js',);
+$tlCfg->gui->text_editor['all'] = array('type' => 'ckeditor');
+//$tlCfg->gui->text_editor['all'] = array('type' => 'fckeditor',
+//                                            'toolbar' => 'tl_default',
+//                                            'configFile' => 'cfg/tl_fckeditor_config.js',);
 $tlCfg->gui->text_editor['execution'] = array( 'type' => 'none');
 
 /** User can choose order of menu areas */

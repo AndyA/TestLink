@@ -57,6 +57,13 @@ function FCKEditorChanged()
 			}
 		}
 	}
+        else if (tc_editor == "ckeditor") {
+                for (var editorname in CKEDITOR.instances) {
+                        if (CKEDITOR.instances(editorname).checkDirty()) {
+                                return true;
+                        }
+                }
+        }
 	return false;
 }
 
