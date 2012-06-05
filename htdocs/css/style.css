@@ -1,0 +1,48 @@
+/*html, body {*/
+/*  padding: 0;*/
+/*  margin: 0;*/
+/*}*/
+
+body, html, #body {
+  font-family: Arial, Helvetica, sans-serif;
+/*  background-color: #ff00ff;*/
+  margin: 0;
+  padding: 0;
+}
+
+#heading {
+  background-color: #444;
+  background-repeat: no-repeat;
+  background-position: 1em center;
+  color: #fff;
+  height: 70px;
+  padding-left: 180px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  font-family: Gill Sans, Arial, Helvetica, sans-serif;
+}
+
+#heading h1 {
+  font-size: 1.2em;
+  padding-top: 0.3em;
+  padding-right: 2em;
+  text-align: right;
+  font-weight: normal;
+}
+
+#body {
+  position: absolute;
+  width: 100%;
+  top: 70px;
+}
+
+#content {
+  margin: 1em;
+}
+
+#content div {
+  float: left;
+  margin: 1em;
+}
