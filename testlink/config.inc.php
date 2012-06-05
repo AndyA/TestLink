@@ -91,6 +91,8 @@
 // ----------------------------------------------------------------------------
 /* [INITIALIZATION] - DO NOT CHANGE THE SECTION */
 
+date_default_timezone_set('Europe/London');
+
 /** @global array Global configuration class */
 $tlCfg = new stdClass();
 $tlCfg->api = new stdClass();
